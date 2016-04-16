@@ -35,3 +35,8 @@ footer.page-footer{
 	color: #fff;
 	font-size: 64px;
 }
+
+.s2 img {
+	max-width: 100%;
+	max-height: 70px;
+}
