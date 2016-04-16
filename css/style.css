@@ -59,25 +59,18 @@ footer.page-footer{
 	max-height: 70px;
 }
 
-.carousel{
-    height: 200px;
-    perspective: 1450px;
+.swiper-container {
+    height: auto;
 }
 
-@media screen and (max-width: 970px){
-    .carousel{
-        perspective: 850px;
-    }
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    line-height: 300px;
 }
 
-@media screen and (max-width: 750px){
-    .carousel{
-        perspective: 450px;
-    }
-}
-
-@media screen and (max-width: 480px){
-    .carousel{
-        perspective: 250px;
-    }
+.swiper-slide .card{
+    margin:0;
+    transition:0;
 }

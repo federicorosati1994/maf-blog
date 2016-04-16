@@ -15,6 +15,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
 	  <!-- Compiled and minified CSS -->
   	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
   	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -97,46 +98,73 @@
     </div>
 
     <div style="background-color: #D4EAFF;" class="container-fluid">
-      <div class="row">
-        <div style="margin-top:20px;" class="col s12 center-align">
-          <h3 class="wow fadeIn">Guarda gli altri articoli suggeriti</h3>
+      <div class="container">
+        <div class="row">
+          <div style="margin-top:20px;" class="col s12 center-align">
+            <h3 class="wow fadeIn">Guarda gli altri articoli suggeriti</h3>
+          </div>
         </div>
-      </div>
 
-      <div class="row">
-        <div class="carousel wow fadeIn">
-          <a class="carousel-item" href="#">
-            <div class="card z-depth-2">
-              <div class="card-image">
-                  <img src="http://www.poxspace.com/wp-content/uploads/2015/11/immagini-belle-2.jpg">
-                  <span class="wow pulse card-title">Titolo 2</span>
-              </div>
+        <!--<div class="card z-depth-2">
+          <div class="card-image">
+              <img src="http://www.poxspace.com/wp-content/uploads/2015/11/immagini-belle-2.jpg">
+              <span class="wow pulse card-title">Titolo 2</span>
+          </div>
+        </div>-->
+
+        <div class="row wow fadeIn">
+          <div class="col s12 m10 offset-m1">
+            <!-- Swiper -->
+            <div style="margin-bottom: 50px;" class="swiper-container z-depth-2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <a href="#">
+                        <div class="card">
+                          <div class="card-image">
+                            <img src="http://www.poxspace.com/wp-content/uploads/2015/11/immagini-belle-2.jpg">
+                            <h4 class="wow pulse card-title">Titolo 2</h4>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#">
+                        <div class="card">
+                          <div class="card-image">
+                            <img src="http://www.nonsprecare.it/wp-content/uploads/2013/12/immagini-natura-animali-piu-belle-ultimi-dieci-anni-8-640x480.jpg">
+                            <h4 class="wow pulse card-title">Titolo 3</h4>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#">
+                        <div class="card">
+                          <div class="card-image">
+                            <img src="http://images2.corriereobjects.it/Primo_Piano/Cultura/gallery/2013/08/iphone-photography/awards20013/img_awards20013/iphone-awards-blue_2649872k_941-705_resize.jpg?v=20130822133941">
+                            <h4 class="wow pulse card-title">Titolo 4</h4>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#">
+                        <div class="card">
+                          <div class="card-image">
+                            <img src="http://www.nonsprecare.it/wp-content/uploads/2013/12/immagini-natura-animali-piu-belle-ultimi-dieci-anni-5-640x480.jpg">
+                            <h4 class="wow pulse card-title">Titolo 5</h4>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
-          </a>
-          <a class="carousel-item" href="#">
-            <div class="card z-depth-2">
-              <div class="card-image">
-                  <img src="http://www.nonsprecare.it/wp-content/uploads/2013/12/immagini-natura-animali-piu-belle-ultimi-dieci-anni-8-640x480.jpg">
-                  <span class="wow pulse card-title">Titolo 3</span>
-              </div>
-            </div>
-          </a>
-          <a class="carousel-item" href="#">
-            <div class="card z-depth-2">
-              <div class="card-image">
-                  <img src="http://images2.corriereobjects.it/Primo_Piano/Cultura/gallery/2013/08/iphone-photography/awards20013/img_awards20013/iphone-awards-blue_2649872k_941-705_resize.jpg?v=20130822133941">
-                  <span class="wow pulse card-title">Titolo 4</span>
-              </div>
-            </div>
-          </a>
-          <a class="carousel-item" href="#">
-            <div class="card z-depth-2">
-              <div class="card-image">
-                  <img src="http://www.nonsprecare.it/wp-content/uploads/2013/12/immagini-natura-animali-piu-belle-ultimi-dieci-anni-5-640x480.jpg">
-                  <span class="wow pulse card-title">Titolo 5</span>
-              </div>
-            </div>
-          </a>
+          </div>
         </div>
       </div>
     </div>
@@ -216,14 +244,23 @@
 	<!-- Compiled and minified JavaScript -->
  	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
  	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+  <script src="js/swiper.min.js"></script>
   <script src="js/script.js"></script>
   <script type="text/javascript">
-    $(document).ready(function(){
-      $('.carousel').carousel();
-    });
 
     $(document).ready(function(){
       $('.materialboxed').materialbox();
+    });
+
+    var swiper = new Swiper('.swiper-container', {
+        nextButton: '.swiper-button-next',
+        slidesPerView: 'auto',
+        prevButton: '.swiper-button-prev',
+        pagination: '.swiper-pagination',
+        centeredSlides: true,
+        paginationClickable: true,
+        autoHeight: true,
+        paginationType: 'progress'
     });
           
   </script>
