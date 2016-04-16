@@ -3,3 +3,5 @@ $(document).ready(function(){
 });
         
 new WOW().init();
+
+$(".button-collapse").sideNav();

@@ -19,13 +19,30 @@
 </head>
 <body>
 
-	<nav>
-	    <div class="nav-wrapper">
-	    	<div class="container-fluid">
-	      	    <a href="index.html" class="brand-logo">Logo</a>
-	         </div>
-	    </div>
-	</nav>
+	<ul id="dropdown1" class="dropdown-content">
+	  <li><a href="#!">post 1</a></li>
+	  <li><a href="#!">post 2</a></li>
+	  <li class="divider"></li>
+	  <li><a href="#!">post 3</a></li>
+	</ul>
+	<div class="navbar-fixed">
+		<nav>
+		    <div class="nav-wrapper">
+		      	<a href="index.html" class="brand-logo">Logo</a>
+		      	<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+		        <ul id="nav-mobile" class="right hide-on-med-and-down">
+			        <li><a href="#">List 1</a></li>
+			        <li><a href="#">List 2</a></li>
+			        <li><a class="dropdown-button" href="#" data-activates="dropdown1">List 3<i class="material-icons right">arrow_drop_down</i></a></li>
+			    </ul>
+			    <ul class="side-nav" id="mobile-demo">
+			        <li><a href="#">List 1</a></li>
+			        <li><a href="#">List 2</a></li>
+			        <li><a class="dropdown-button" href="#" data-activates="dropdown1">List 3<i class="material-icons right">arrow_drop_down</i></a></li>
+			    </ul>
+		    </div>
+		</nav>
+	</div>
 
 	<div class="parallax-container">
       	<div class="parallax">
@@ -43,7 +60,7 @@
       	</div>
     </div>
 
-    <div style="margin-top: -80px;" class="container">
+    <div style="margin-top: -90px;" class="container">
 		<div class="row">
 			<div class="col s12 center-align">
 				<a href="#"><i class="material-icons wow slideInDown">keyboard_arrow_down</i></a>
@@ -54,7 +71,7 @@
     <div class="container">
     	<div class="wow fadeInUp row">
 	        <div class="col m10 offset-m1 s12">
-	          	<div style="margin-top:60px;" class="card z-depth-2">
+	          	<div style="margin-top: 40px;" class="card z-depth-2">
 	          		<a href="post.html">
 			            <div class="card-image">
 			              <img src="http://ilsaggiolibro.it/wp-content/uploads/2013/12/001.jpg">
@@ -80,7 +97,7 @@
 
     	<div class="wow fadeInUp row">
 	        <div class="col m10 offset-m1 s12">
-	          	<div class="card z-depth-2">
+	          	<div class="card z-depth-2 raised">
 	          		<a href="#">
 			            <div class="card-image">
 			              <img src="http://www.poxspace.com/wp-content/uploads/2015/11/immagini-belle-2.jpg">
@@ -156,7 +173,7 @@
 	        </div>
     	</div>
 
-    	<div style="margin-bottom: 80px;" class="wow fadeInUp row">
+    	<div style="margin-bottom: 60px;" class="wow fadeInUp row">
 	        <div class="col m10 offset-m1 s12">
 	          	<div class="card z-depth-2">
 		            <a href="#">

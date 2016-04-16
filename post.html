@@ -20,13 +20,30 @@
 </head>
 <body>
 
-	<nav>
-	    <div class="nav-wrapper">
-            <div class="container-fluid">
-	      	    <a href="index.html" class="brand-logo">Logo</a>
-	         </div>
-      </div>
-	</nav>
+	<ul id="dropdown1" class="dropdown-content">
+    <li><a href="#!">post 1</a></li>
+    <li><a href="#!">post 2</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">post 3</a></li>
+  </ul>
+  <div class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo">Logo</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><a href="#">List 1</a></li>
+              <li><a href="#">List 2</a></li>
+              <li><a class="dropdown-button" href="#" data-activates="dropdown1">List 3<i class="material-icons right">arrow_drop_down</i></a></li>
+          </ul>
+          <ul class="side-nav" id="mobile-demo">
+              <li><a href="#">List 1</a></li>
+              <li><a href="#">List 2</a></li>
+              <li><a class="dropdown-button" href="#" data-activates="dropdown1">List 3<i class="material-icons right">arrow_drop_down</i></a></li>
+          </ul>
+        </div>
+    </nav>
+  </div>
 
   <div class="fixed-action-btn horizontal click-to-toggle" style="bottom: 45px; right: 24px;">
     <a class="wow bounceIn btn-floating btn-large">
