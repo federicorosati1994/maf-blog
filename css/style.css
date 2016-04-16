@@ -7,16 +7,32 @@ nav{
 	background-color: #1C9AD6;
 }
 
+.btn, .btn-large{
+    background-color: #1C9AD6;
+}
+
+.btn:hover, .btn-large:hover{
+    background-color: #1770B2;
+}
+
 h1{
+    font-size: 3.2rem; 
 	margin-top: 200px;
 }
 
+h2{
+    font-size: 2.56rem; 
+}
+
+h3{
+    font-size: 1.92rem; 
+}
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-floating){
 	color: #1C9AD6;
 }
 
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-floating):hover{
-	color: #0B3E56;
+	color: #1770B2;
 }
 
 .card .card-content p{
@@ -24,6 +40,8 @@ h1{
 }
 
 footer.page-footer{
+    margin-top: -20px;
+    padding-top: 0;
 	background-color: #1C9AD6;
 }
 
@@ -39,4 +57,27 @@ footer.page-footer{
 .s2 img {
 	max-width: 100%;
 	max-height: 70px;
+}
+
+.carousel{
+    height: 200px;
+    perspective: 1450px;
+}
+
+@media screen and (max-width: 970px){
+    .carousel{
+        perspective: 850px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .carousel{
+        perspective: 450px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .carousel{
+        perspective: 250px;
+    }
 }
