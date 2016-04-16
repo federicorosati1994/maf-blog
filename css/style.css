@@ -104,6 +104,22 @@ footer.page-footer{
     transition:0;
 }
 
+#HCB_comment_box {
+    padding-top: 50px;
+}
+
+#HCB_comment_box a {
+    display: none;
+}
+
+span {
+    display: none;
+}
+
+h3 {
+    color: white;
+}
+
 @media screen and (max-width: 992px){
     .brand-logo{
         margin-left: 0;
