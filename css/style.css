@@ -1,0 +1,37 @@
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+	background-color: #eee;
+}
+
+nav{
+	background-color: #1C9AD6;
+}
+
+h1{
+	margin-top: 200px;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating){
+	color: #1C9AD6;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating):hover{
+	color: #0B3E56;
+}
+
+.card .card-content p{
+	color: #888;
+}
+
+footer.page-footer{
+	background-color: #1C9AD6;
+}
+
+.parallax-container {
+  height: 93vh;
+}
+
+.material-icons{
+	color: #fff;
+	font-size: 64px;
+}
