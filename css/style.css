@@ -7,6 +7,10 @@ nav{
 	background-color: #1C9AD6;
 }
 
+.brand-logo{
+    margin-left: 25px;
+}
+
 .btn, .btn-large{
     background-color: #1C9AD6;
 }
@@ -15,9 +19,26 @@ nav{
     background-color: #1770B2;
 }
 
+.fixed-action-btn.horizontal{
+    bottom: 25px !important;
+    right: 25px !important;
+}
+
+.btn-floating .btn-large{
+    background-color: #1C9AD6;
+}
+
+.btn-share{
+    background-color: #1770B2;
+}
+
+.btn-floating:hover .btn-share{
+    background-color: #1770B2;
+}
+
 h1{
     font-size: 3.2rem; 
-	margin-top: 100px;
+	margin-top: 250px;
 }
 
 h2{
