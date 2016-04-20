@@ -112,14 +112,6 @@ footer.page-footer{
     display: none;
 }
 
-span {
-    display: none;
-}
-
-h3 {
-    color: white;
-}
-
 @media screen and (max-width: 992px){
     .brand-logo{
         margin-left: 0;
